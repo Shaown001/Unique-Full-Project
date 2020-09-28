@@ -559,12 +559,13 @@ a, a:hover{
 .testi-section .testi-inside:hover{
 	opacity: 1;
 }
-.testi-section .testi-inside:hover .client-inner p{
+.testi-section .testi-inside:hover .client-inner h3{
 	color: #511de5;
 }
-.testi-section .client-inner p{
+.testi-section .client-inner h3{
 	font-size: 18px;
 	font-weight: 600;
+	font-family:unset;
 	line-height: 28px;
 	color: #000000;
 	margin-top: 90px;
