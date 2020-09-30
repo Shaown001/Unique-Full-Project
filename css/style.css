@@ -447,32 +447,56 @@ a, a:hover{
 .efficiency-section .efficiency-inner h6 img{
 	margin-right: 20px;
 }
-.efficiency-section .efficiency-inner .btn{
-	font-size: 15px;
-	font-weight: 400;
-	padding: 10px 20px;
-	margin-right: 90px;
-	margin-top: 20px;
-	text-transform: uppercase;
-	letter-spacing: 4px;
-	background: linear-gradient(to right , #511de5 40% , #0d89fb);
-	color: #fff;
-	border: 1px solid #511de5;
-	border-radius: 20px;
-	transition: 1s;
-	box-shadow: 0px;
+.efficiency-section .efficiency-inner .btn {
+  border: none;
+  text-align: center;
+  letter-spacing: 3px;
+  cursor: pointer;
+  text-transform: uppercase;
+  outline: none;
+  overflow: hidden;
+  position: relative;
+  color: #fff;
+  font-weight: 500;
+  font-size: 15px;
+  background: linear-gradient(to right , #511de5 40% , #0d89fb);
+  padding: 10px 35px;
+  margin-top: 20px;
+  margin-left: 30px;
+  right: 5.5%;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.20);
+  border-radius: 25px;
 }
 .efficiency-section .efficiency-inner .btn:hover{
-	background: #fff;
-	color: #511de5;
-	border: 1px solid #511de5;
+	color: #1a1a1a;
+}
+.efficiency-section .efficiency-inner .btn span {
+  position: relative; 
+  z-index: 1;
+}
+.efficiency-section .efficiency-inner .btn:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 700%;
+  width: 130%;
+  background: #f2f2f2;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
+  transform: translateX(-98%) translateY(-25%) rotate(45deg);
+}
+.efficiency-section .efficiency-inner .btn:hover:after {
+  -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
+  transform: translateX(-9%) translateY(-25%) rotate(45deg);
 }
 .efficiency-section .efficiency-inner .btn .fa{
 	margin-left: 15px;
 }
 .efficiency-section .efficiency-img{
 	width: 100%;
-	margin-top: 130px;
+	margin-top: 95px;
 }
 .efficiency-section .efficiency-img img{
 	width: 125%;
@@ -558,9 +582,12 @@ a, a:hover{
 }
 .testi-section .testi-inside:hover{
 	opacity: 1;
+	box-shadow: 1px 5px 10px #511de5;
 }
 .testi-section .testi-inside:hover .client-inner h2{
 	color: #511de5;
+	transition: 1s;
+	transform: scale(1.05);
 }
 .testi-section .client-inner h2{
 	font-size: 18px;
